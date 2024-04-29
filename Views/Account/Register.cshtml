@@ -1,0 +1,30 @@
+﻿@model Emp
+<form asp-controller="Account" asp-action="Register" method="post">
+    <div class="border p=3">
+        <div class="row pb-2">
+            <h2 class="text-primary">Register New User</h2>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Id"></label>
+            <input asp-for="Id" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="Roles"></label>
+            <input asp-for="Roles" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="UserName"></label>
+            <input asp-for="UserName" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="Password"></label>
+            <input asp-for="Password" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:150px">Register</button>
+        <a asp-controller="Account" asp-action="Login" class="btn btn-secondary">Proceed to Login</a>
+    </div>
+</form>
